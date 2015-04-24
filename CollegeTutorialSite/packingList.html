@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>TCNJ Packing List</title>
+
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        function unhide(divID) {
+            console.log("started");
+            var item = document.getElementById(divID);
+            console.log(item);
+            if (item) {
+                if (item.classList.contains("hidden"))
+                    item.classList.remove("hidden");
+                else
+                    item.classList.add("hidden");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="index.html">
+                    <img src="images/tcnj-logo.png" id="tcnjHeader" />
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="residenceHalls.html">Residence Halls</a>
+                    </li>
+                    <li><a href="packingList.html">Packing List</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="page-header">
+        <center>
+            <h1>Packing List</h1>
+            <div class="alert alert-info">Click on items that are underlined to reveal extra tips about packing!</div>
+        </center>
+
+    </div>
+    <div class="row special">
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">School Supplies</h3>
+                </div>
+                <div class="panel-body">
+                    <form>
+                    
+                        <input type="checkbox"><a href="javascript:unhide('textbookTip')" class="tipItem">Textbooks</a><br>
+                        <div class="alert alert-info hidden" id="textbookTip">Tip: To minimize textbook costs, rent from sites like Chegg or buy used if you want to keep them. Also, think about using e-books to decrease costs and the weight of your backpack.</div>
+
+                        <input type="checkbox"><a href="javascript:unhide('binderTip')" class="tipItem">Binders/Spiral Notebooks</a><br>
+                        <div class="alert alert-info hidden" id="binderTip">Tip: Try going digital! Many professors post their slides online and you can use apps like Evernote to take notes in class and stay organized. However, in some classes you may be better off the old-fashioned way.</div>
+
+                        <input type="checkbox">Folders<br>
+                        <input type="checkbox">Loose Leaf Paper<br>
+                        <input type="checkbox">Pencils<br>
+                        <input type="checkbox">Pens<br>
+                        <input type="checkbox">Colored Pencils<br>
+                        <input type="checkbox">Markers<br>
+                        <input type="checkbox">Post-it Notes<br>
+                        <input type="checkbox">Highlighters<br>
+                        <input type="checkbox">Glue<br>
+                    </form>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Laundry</h3>
+                </div>
+                <div class="panel-body">
+                    <form>
+                    
+                        <input type="checkbox"><a href="javascript:unhide('detergentTip')" class="tipItem">Detergent</a><br>
+                        <div class="alert alert-info hidden" id="detergentTip">Tip: Get Tide pods instead of liquid detergent for a more convenient (and fun) way to do laundry!</div>
+
+                        <input type="checkbox">Dryer Sheets<br>
+                        <input type="checkbox">Laundry Basket<br>
+                    </form>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Cleaning</h3>
+                </div>
+                <div class="panel-body">
+                    <form>
+                    
+                        <input type="checkbox"><a href="javascript:unhide('vacuumTip')" class="tipItem">Vacuum</a><br>
+                        <div class="alert alert-info hidden" id="vacuumTip">Tip: Invest in a dust buster to store easily and clean the hard to reach areas in your dorm room.</div>
+
+                        <input type="checkbox"><a href="javascript:unhide('wipeTip')" class="tipItem">Magic Eraser/Cleaning Wipes</a><br>
+                        <div class="alert alert-info hidden" id="wipeTip">Tip: Get a microfiber cloth! They’re great for cleaning screens and getting dust off of pretty much anything.</div>
+
+                        <input type="checkbox">Paper Towels<br>
+                        <input type="checkbox">Windex<br>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Toiletries</h3>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <input type="checkbox">Shower Caddy<br>
+
+                        <input type="checkbox"><a href="javascript:unhide('flipflopTip')" class="tipItem">Flip Flops</a><br>
+                        <div class="alert alert-info hidden" id="flipflopTip">Tip: Buy the cheapest pair you can find to wear inside the shower so you don’t mind throwing them out at the end of the year (or earlier).</div>
+
+                        <input type="checkbox">Towels/Washcloths<br>
+                        <input type="checkbox">Shampoo/Conditioner<br>
+                        <input type="checkbox">Soap/Body Wash<br>
+                        <input type="checkbox">Razor<br>
+                        <input type="checkbox">First Aid Kit<br>
+                        <input type="checkbox">Toothbrush<br>
+                        <input type="checkbox">Toothpaste<br>
+                        <input type="checkbox">Mouth Wash<br>
+                        <input type="checkbox">Floss<br>
+                        <input type="checkbox">Medication<br>
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Bed Supplies</h3>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <input type="checkbox">Sheets
+                        <br>
+                        <input type="checkbox">Blankets
+                        <br>
+                        <input type="checkbox">Pillows
+                        <br>
+                        <input type="checkbox">Pillow Cases
+                        <br>
+                    </form>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Appliances</h3>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <input type="checkbox">Laptop
+                        <br>
+                        <input type="checkbox">TV
+                        <br>
+                        <input type="checkbox">Fridge
+                        <br>
+                        <input type="checkbox">Microwave
+                        <br>
+                        <input type="checkbox">Movies
+                        <br>
+                        <input type="checkbox">Video Games
+                        <br>
+                        <input type="checkbox">Alarm Clock
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Clothing</h3>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <input type="checkbox">Umbrella<br>
+                        <input type="checkbox">Rain Jackets<br>
+
+                        <input type="checkbox"><a href="javascript:unhide('bootTip')" class="tipItem">Boots/Rain Boots</a><br>
+                        <div class="alert alert-info hidden" id="bootTip">Tip: TCNJ’s campus can get some pretty big puddles. You don’t want to sit through class with uncomfortably wet socks!</div>
+
+                        <input type="checkbox">Winter Coat<br>
+                        <input type="checkbox">Exercise Clothing<br>
+                        <input type="checkbox">Pajamas<br>
+                    </form>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Miscellaneous</h3>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <input type="checkbox">Sports Equipment (Frisbee, Football, etc.)<br>
+
+                        <input type="checkbox"><a href="javascript:unhide('posterTip')" class="tipItem">Posters and Decorations</a><br>
+                        <div class="alert alert-info hidden" id="posterTip">Tip: No posters? No problem! TCNJ has a poster sale a couple of weeks into each semester.</div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Girl's Section</h3>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <input type="checkbox">Perfume
+                        <br>
+                        <input type="checkbox">Hair Ties
+                        <br>
+                        <input type="checkbox">Straightener/Curling Iron
+                        <br>
+                        <input type="checkbox">Lotion
+                        <br>
+                        <input type="checkbox">Blow Dryer
+                        <br>
+                        <input type="checkbox">Headbands
+                        <br>
+                        <input type="checkbox">Bobby Pins
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
